@@ -1,0 +1,17 @@
+{
+  "name": "budgeting",
+  "version": "1.0.0",
+  "description": "A simple terminal application for budgeting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx coffee --compile --output lib index.coffee; elm-make Main.elm --output=lib/main.js; node lib/index.js"
+  },
+  "author": "Sam Phillips",
+  "license": "ISC",
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "coffee-script": "^1.12.7",
+    "npm": "^6.0.1"
+  }
+}
